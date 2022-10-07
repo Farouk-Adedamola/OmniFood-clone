@@ -1,0 +1,17 @@
+.header img {
+  height: 28px;
+  width: 200px;
+  /* object-fit: cover; */
+  /* background-position: ; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article {
+  transition: all 0.5s;
+  height: 0;
+  overflow: hidden;
+}
