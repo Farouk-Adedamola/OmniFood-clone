@@ -1,0 +1,55 @@
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1.5rem 1.5rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 1.5 auto;
+}
+
+.persons {
+  margin: 0 auto;
+
+  /* padding: 0rem 0.7rem; */
+  /* margin: 0 0.5rem; */
+}
+
+.src {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: -12px;
+  border: 2px solid #cf711f;
+}
+
+.src:first-child {
+  border: transparent;
+  height: 34px;
+  width: 34px;
+}
+
+.section p {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-left: 15px;
+  color: #6f6f6f;
+}
+
+.section p span {
+  color: #cf711f;
+}
+
+.imageGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 80vw;
+  height: 300px;
+  object-fit: cover;
+  /* margin: 0 auto; */
+  /* margin-left: 2.4rem; */
+  /* margin-right: auto; */
+}

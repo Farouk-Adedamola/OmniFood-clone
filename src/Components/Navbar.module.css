@@ -1,0 +1,44 @@
+.container {
+  background: rgb(253, 242, 233);
+  background: radial-gradient(
+    circle,
+    rgba(253, 242, 233, 1) 48%,
+    rgba(253, 242, 233, 1) 100%
+  );
+}
+
+.fixed {
+  padding: 1.5rem 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fixed img {
+  height: 1.05rem;
+  width: 8rem;
+}
+
+.fixed button {
+  font-size: 1.3rem;
+  background: transparent;
+  cursor: pointer;
+  width: 2.5rem;
+}
+
+.article {
+  transition: all 0.5s;
+  height: 0;
+  overflow: hidden;
+}
+
+.article ul {
+  list-style-type: none;
+  padding: 1rem 1rem;
+}
+
+.article ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #000;
+}

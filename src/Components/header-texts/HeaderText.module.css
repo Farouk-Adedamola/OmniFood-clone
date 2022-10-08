@@ -1,0 +1,58 @@
+.header {
+  position: relative;
+  top: -1rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  /* padding: 0 1rem; */
+  text-align: center;
+  font-weight: bold;
+  line-height: 2.1rem;
+}
+
+.header p {
+  line-height: 1.7rem;
+  text-align: center;
+  margin: 0 0.5rem;
+}
+
+.buttons {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons button {
+  padding: 1rem;
+  margin-right: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  background: #fff;
+  border: solid 2px transparent;
+  border-radius: 0.5rem;
+}
+
+button:first-child {
+  background: #e67e22;
+  color: #fff;
+  border: none;
+}
+
+button:first-child:hover {
+  background: #cf711f;
+}
+
+button:nth-child(2):hover {
+  background: transparent;
+  border: 2px solid #cf711f;
+}
+
+.boxArrow {
+  margin-left: 5px;
+  color: #cf711f;
+  font-weight: bold;
+}
