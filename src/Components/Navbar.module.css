@@ -128,9 +128,6 @@
     display: flex;
   }
 
-  /* .article ul li {
-  } */
-
   .article ul li a {
     margin-right: 10px;
     font-weight: bold;

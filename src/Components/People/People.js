@@ -6,25 +6,21 @@ import customer2 from "../../Assets/person-images/customer-3.jpg";
 import customer3 from "../../Assets/person-images/customer-4.jpg";
 import customer4 from "../../Assets/person-images/customer-5.jpg";
 import customer5 from "../../Assets/person-images/customer-6.jpg";
-import imageGrid from "../../Assets/logo-images/image-grid.png";
 const People = () => {
   return (
     <Fragment>
-      <section className={classes.section}>
-        <article className={classes.persons}>
+      <div className="contain">
+        <section className={classes.section}>
           <img src={customer} alt="customer" className={classes.src} />
           <img src={customer1} alt="customer1" className={classes.src} />
           <img src={customer2} alt="customer2" className={classes.src} />
           <img src={customer3} alt="customer3" className={classes.src} />
           <img src={customer4} alt="customer4" className={classes.src} />
           <img src={customer5} alt="customer5" className={classes.src} />
-        </article>
-        <p>
-          <span>250,000+ </span> meals delivered last year!
-        </p>
-      </section>
-      <div className="grid">
-        <img src={imageGrid} alt="" className={classes.imageGrid} />
+          <p>
+            <span>250,000+ </span> meals delivered last year!
+          </p>
+        </section>
       </div>
     </Fragment>
   );
