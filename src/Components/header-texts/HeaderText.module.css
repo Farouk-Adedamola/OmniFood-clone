@@ -2,9 +2,16 @@
   position: relative;
   top: -1rem;
   margin: 0 auto;
+  /* width: 95vw; */
   padding: 0 1rem;
+  /* max-width: 35vw; */
 }
 
+/* @media screen and (max-width: 920px) {
+  .header {
+    margin: 0 3rem;
+  }
+} */
 .header h1 {
   color: #555555;
   font-size: 2rem;
@@ -18,7 +25,7 @@
   color: #767676;
   line-height: 1.7rem;
   text-align: center;
-  margin: 0 0.5rem;
+  /* margin: 0 0.5rem; */
 }
 
 .buttons {
@@ -59,23 +66,18 @@ button:nth-child(2):hover {
   font-weight: bold;
 }
 
-/* .people {
-  display: flex;
-  flex-direction: column-reverse;
-} */
-
 .imageGrid {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: 80vw;
-  height: 300px;
+  width: 65vw;
+  height: auto;
   object-fit: cover;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
-@media screen and (max-740: 760px) {
+@media screen and (max-width: 760px) {
   .imageGrid {
     margin-top: 0;
     padding: 0;
@@ -85,32 +87,39 @@ button:nth-child(2):hover {
 }
 /* media screens minimum 760px */
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 860px) {
   .section {
-    padding: 2rem 3rem;
-    margin: 2rem 0 0 0;
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     position: relative;
-    top: 0;
+    top: 2rem;
+    align-items: flex-start;
     max-width: 90vw;
     margin: 0 auto;
-    grid-template-columns: 1fr 1fr;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    /* margin-right: 2rem; */
+    /* padding-right: 2rem; */
   }
 
   .header h1 {
+    padding: 0 1rem;
     font-size: 3rem;
     text-align: left;
     line-height: 3.3rem;
-    padding: 0 2.5rem 0 0;
-    margin: 1.5rem 0;
   }
 
   .header p {
-    margin-top: 2rem;
+    padding: 0 1rem;
+
+    margin-top: 0;
     text-align: left;
     font-size: 1.2rem;
-    padding: 0 2.5rem 0 0;
-    margin-left: -2px;
   }
 
   .buttons {

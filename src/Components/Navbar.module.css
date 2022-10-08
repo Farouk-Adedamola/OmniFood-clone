@@ -97,12 +97,15 @@
 
 /* @ 760 pixels */
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 860px) {
   .header {
+    /* display: flex; */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    /* margin-top: 0; */
   }
+
   .fixed {
     padding: 1.5rem 2.8rem;
   }

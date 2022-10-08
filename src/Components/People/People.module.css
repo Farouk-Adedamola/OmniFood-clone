@@ -39,13 +39,19 @@
   color: #cf711f;
 }
 
+@media screen and (min-width: 860px) {
+  .section {
+    margin-left: 0;
+  }
+}
+
 /* media screens 760px */
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 1200px) {
   .section {
     justify-content: start;
     align-items: flex-start;
-    margin-left: -45vw;
-    margin-top: -10vh;
+    margin-left: -48vw;
+    /* margin-top: -10vh; */
   }
 }
