@@ -1,3 +1,4 @@
+import { hover } from "@testing-library/user-event/dist/hover";
 import React from "react";
 
 export const links = [
@@ -27,6 +28,7 @@ export const links = [
     text: "pricing",
   },
   {
+    css: { background: "#CF711F", color: "#fff" },
     id: 6,
     url: "/profile",
     text: "try for free",

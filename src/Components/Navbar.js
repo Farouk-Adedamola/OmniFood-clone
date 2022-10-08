@@ -8,6 +8,30 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
+  const [fix, setFix] = useState(false);
+
+  // const navFix = () => {
+  //   if (window.scrollY >= 200) {
+  //     setFix(true);
+  //   } else {
+  //     setFix(false);
+  //   }
+  // };
+
+  useEffect(() => {
+    const navFix = () => {
+      if (window.scrollY >= 200) {
+        setFix(true);
+      } else {
+        setFix(false);
+      }
+    };
+    window.addEventListener("scroll", navFix);
+
+    return () => {
+      window.removeEventListener("scroll", navFix);
+    };
+  });
 
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
@@ -17,28 +41,31 @@ const Navbar = () => {
       linksContainerRef.current.style.height = "0px";
     }
   }, [toggle]);
+
   return (
     <Fragment>
       <section className={classes.container}>
         <div className={classes.header}>
-          <div className={classes.fixed}>
+          <div className={fix ? classes.scroll : classes.fixed}>
             <img src={logo} alt="logo" />
             <button type="button" onClick={() => setToggle(!toggle)}>
               <FaBars />
             </button>
           </div>
-        </div>
-        <div className={classes.article} ref={linksContainerRef}>
-          <ul ref={linksRef}>
-            {links.map((menu) => {
-              const { id, url, text } = menu;
-              return (
-                <li className={classes.menu} key={id}>
-                  <a href={url}>{text}</a>
-                </li>
-              );
-            })}
-          </ul>
+          <div className={classes.article} ref={linksContainerRef}>
+            <ul ref={linksRef}>
+              {links.map((menu) => {
+                const { id, url, text, css } = menu;
+                return (
+                  <li className={classes.menu} key={id}>
+                    <a href={url} style={css}>
+                      {text}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
         <HeaderText />
       </section>
