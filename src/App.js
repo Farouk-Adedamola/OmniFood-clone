@@ -1,11 +1,13 @@
 import classes from "./App.module.css";
 import Navbar from "./Components/Navbar";
+import Featured from "./Components/belowHeader/Featured";
 
 function App() {
   return (
     <>
       <section className={classes.Navbar}>
         <Navbar />;
+        <Featured />
       </section>
       <section>
         TIRED OF BORING LOREM IPSUM? Paragraphs: 10 GENERATE Jelly sweet roll
