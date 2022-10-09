@@ -75,7 +75,6 @@ button:nth-child(2):hover {
   height: auto;
   object-fit: cover;
   padding-bottom: 2rem;
-  /* margin-bottom: 1.5rem; */
 }
 
 @media screen and (max-width: 760px) {
