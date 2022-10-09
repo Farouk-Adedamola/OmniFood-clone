@@ -75,6 +75,7 @@ button:nth-child(2):hover {
   height: auto;
   object-fit: cover;
   padding-bottom: 2rem;
+  /* margin-bottom: 1.5rem; */
 }
 
 @media screen and (max-width: 760px) {
@@ -83,6 +84,7 @@ button:nth-child(2):hover {
     padding: 0;
     position: relative;
     top: 0;
+    padding-bottom: 2rem;
   }
 }
 /* media screens minimum 760px */
@@ -141,5 +143,6 @@ button:nth-child(2):hover {
     width: 40vw;
     height: auto;
     align-self: start;
+    margin-bottom: 0;
   }
 }
