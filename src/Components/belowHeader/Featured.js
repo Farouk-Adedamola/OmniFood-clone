@@ -5,17 +5,27 @@ import React, { Fragment } from "react";
 // import forbes from "../../Assets/logo-images/forbes.png";
 // import usatoday from "../../Assets/logo-images/usa-today.png";
 import { image } from "./imageData";
-
 import classes from "./Featured.module.css";
+
 const Featured = () => {
   return (
     <Fragment>
       <div className={classes.featured}>
         <h1>as featured in</h1>
-        {image.map((images) => {
-          const { id, img } = images;
-          return <img key={id} src={img} alt="img" />;
-        })}
+        <article className={classes.article}>
+          {image.map((images) => {
+            const { id, img, css } = images;
+            return (
+              <img
+                key={id}
+                src={img}
+                style={css}
+                alt="img"
+                className={classes.busimg}
+              />
+            );
+          })}
+        </article>
       </div>
     </Fragment>
   );

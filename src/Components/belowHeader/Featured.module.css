@@ -1,0 +1,44 @@
+.featured h1 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #767676;
+}
+
+.featured {
+  color: #767676;
+  margin-top: 0;
+}
+
+.article {
+  height: 3rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 75vw;
+  margin: 0 auto;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+.busimg {
+  margin: 0 auto;
+  /* height: 0.5rem; */
+  /* width: 3.2rem; */
+  /* color: #767676; */
+  /* background: #767676; */
+  /* font-size: small; */
+  /* object-fit: cover; */
+}
+
+@media screen and (min-width: 760px) {
+  .featured h1 {
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .busimg {
+    filter: grayscale(100%);
+    object-fit: contain;
+  }
+}

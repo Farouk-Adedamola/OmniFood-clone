@@ -20,7 +20,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const navFix = () => {
-      if (window.scrollY >= 450) {
+      if (window.scrollY >= 5050) {
         setFix(true);
       } else {
         setFix(false);
