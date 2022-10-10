@@ -8,7 +8,8 @@ export const meal = [
     type: "vegetarian",
     dish: "avocado salad",
     calories: "650 calories",
-    nutri: "NutriScore &reg 74",
+    nutri: "NutriScore",
+    number: 74,
     rate: "4.9 Rating (537)",
   },
   {
@@ -17,9 +18,10 @@ export const meal = [
     type: "vegan",
     type2: "paleo",
     dish: "japanese gyozas",
-    calories: "650 calories",
-    nutri: "NutriScore &reg 74",
-    rate: "4.9 Rating (537)",
+    calories: "400 calories",
+    nutri: "NutriScore",
+    number: 92,
+    rate: "4.8 Rating (441)",
   },
 ];
 

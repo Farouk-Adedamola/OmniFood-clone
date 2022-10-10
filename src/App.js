@@ -12,6 +12,20 @@ function App() {
         <Featured />
         <HowItworks />
         <Meals />
+        <p>
+          shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+          kkkddjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+          djjjjjjjjjjjjjjjjjjjjjjjjjjjjdjjjjjj
+          shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+          kkkddjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+          djjjjjjjjjjjjjjjjjjjjjjjjjjjjdjjjjjj
+          shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+          kkkddjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+          djjjjjjjjjjjjjjjjjjjjjjjjjjjjdjjjjjj
+          shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+          kkkddjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+          djjjjjjjjjjjjjjjjjjjjjjjjjjjjdjjjjjj
+        </p>
       </section>
     </>
   );
