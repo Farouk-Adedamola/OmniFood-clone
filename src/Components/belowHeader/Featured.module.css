@@ -17,18 +17,11 @@
   flex-direction: row;
   width: 75vw;
   margin: 0 auto;
-  /* justify-content: space-around; */
   align-items: center;
 }
 
 .busimg {
   margin: 0 auto;
-  /* height: 0.5rem; */
-  /* width: 3.2rem; */
-  /* color: #767676; */
-  /* background: #767676; */
-  /* font-size: small; */
-  /* object-fit: cover; */
 }
 
 @media screen and (min-width: 760px) {

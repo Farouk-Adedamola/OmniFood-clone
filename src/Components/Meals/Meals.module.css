@@ -1,0 +1,11 @@
+.main h1 {
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main h2 {
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.3rem;
+}

@@ -7,7 +7,6 @@
   color: #d27a1f;
   text-transform: uppercase;
   margin-bottom: 0;
-  /* 767676 */
 }
 
 .section > p {
@@ -29,10 +28,6 @@
   width: 30vw;
   height: auto;
   margin-bottom: 0;
-  /* background: #767676; */
-  /* background-size: ; */
-  /* background-position: 30%; */
-  /* transform: translateX(-1rem); */
 }
 
 .elements {
@@ -57,13 +52,76 @@
   line-height: 1.5rem;
 }
 
-@media screen and (min-width: 920px) {
-  .elements p {
-    font-size: 1.1rem;
+@media screen and (min-width: 520px) {
+  .article p {
+    font-size: 0.85rem;
+    line-height: 1.2rem;
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
+  .section {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .section > h1 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+  }
+  .section > p {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  .article {
+    height: 20rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  .article img {
+    height: 15rem;
+    width: auto;
+    object-fit: cover;
+  }
+
+  .article p {
+    line-height: 1.4rem;
+  }
+
+  .elements {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin: 0;
+  }
+
+  .elements h1 {
+    margin: 0;
+    font-size: 3.5rem;
+  }
+
+  .elements h2 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .elements p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .diff {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 920px) {
   .section {
     width: 80vw;
     margin: 0 auto;
@@ -74,28 +132,27 @@
     font-weight: normal;
     margin: 0;
   }
+
   .section > p {
     font-size: 2.5rem;
     margin: 0;
   }
 
   .article {
-    height: 24rem;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
-    /* width: 70vw; */
     margin: 2rem auto;
-    /* justify-content: space-between; */
-    /* margin: 3.5rem auto; */
   }
 
   .article img {
     height: 20rem;
-    /* width: 30rem; */
     width: auto;
     object-fit: cover;
-    /* margin: 2rem 0; */
+  }
+
+  .article p {
+    line-height: 1.5rem;
   }
 
   .elements {
@@ -118,7 +175,6 @@
 
   .elements p {
     margin-top: 1rem;
-    /* font-size: 1.1rem; */
   }
 
   .diff {
