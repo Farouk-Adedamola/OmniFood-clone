@@ -1,6 +1,3 @@
-import { hover } from "@testing-library/user-event/dist/hover";
-import React from "react";
-
 export const links = [
   {
     id: 1,

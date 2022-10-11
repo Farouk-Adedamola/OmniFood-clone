@@ -3,7 +3,7 @@ import Navbar from "./Components/Navbar";
 import Featured from "./Components/belowHeader/Featured";
 import HowItworks from "./Components/HowItworks/HowItworks";
 import Meals from "./Components/Meals/Meals";
-
+import Testimonials from "./Components/Testimonials/Testimonials";
 function App() {
   return (
     <>
@@ -12,6 +12,7 @@ function App() {
         <Featured />
         <HowItworks />
         <Meals />
+        <Testimonials />
         <p>
           shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
           kkkddjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
