@@ -111,8 +111,12 @@
 .items p {
   display: flex;
   align-items: center;
-  margin: 0.8rem auto;
-  transform: translateX(40%);
+  margin: 0.8rem 25% auto 25%;
+  position: relative;
+  /* left: 35%; */
+  /* float: right; */
+  /* justify-content: center; */
+  /* transform: translateX(40%); */
 }
 
 .check {

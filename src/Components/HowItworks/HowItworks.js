@@ -1,10 +1,9 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import phone from "../../Assets/phone-images/app-screen-1.png";
 import phone2 from "../../Assets/phone-images/app-screen-2.png";
 import phone3 from "../../Assets/phone-images/app-screen-3.png";
 import classes from "./HowItworks.module.css";
 const Howitworks = () => {
-  const [diff] = useState(true);
   return (
     <Fragment>
       <section className={classes.section}>
@@ -24,17 +23,19 @@ const Howitworks = () => {
           </div>
         </div>
         <div className={`${classes.article} ${classes.diff}`}>
-          <img src={phone2} alt="phone" />
-          <div className={classes.elements}>
-            <div className={classes.elements}>
-              <h1>02</h1>
-              <h2>Approve your weekly meal plan</h2>
-              <p>
-                Once per week, approve the meal plan generated for you by
-                Omnifood AI. You can change ingredients, swap entire meals, or
-                even add your own recipes.
-              </p>
+          <div className={classes.wrap2}>
+            <div className={classes.wrap}>
+              <img src={phone2} alt="phone" />
             </div>
+          </div>
+          <div className={classes.elements}>
+            <h1>02</h1>
+            <h2>Approve your weekly meal plan</h2>
+            <p>
+              Once per week, approve the meal plan generated for you by Omnifood
+              AI. You can change ingredients, swap entire meals, or even add
+              your own recipes.
+            </p>
           </div>
         </div>
         <div className={classes.article}>

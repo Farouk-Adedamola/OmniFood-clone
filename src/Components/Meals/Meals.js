@@ -74,7 +74,7 @@ const Meals = () => {
         </div>
         <div className={classes.last}>
           <p className={classes.link}>
-            <a href="">see all recipes</a>
+            <a href="/">see all recipes</a>
             <BsBoxArrowInRight className={classes.right} />
           </p>
           <div className={classes.underline}></div>
