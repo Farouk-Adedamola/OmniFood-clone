@@ -5,6 +5,11 @@
     rgba(253, 242, 233, 1) 48%,
     rgba(253, 242, 233, 1) 100%
   );
+  /* display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center; */
+  /* grid-template-columns: repeat(autofit, minmax(200px 1fr)); */
+  /* grid-template-rows: repeat(autofix, minmax(200px 1fr)); */
 }
 
 .main {
@@ -28,9 +33,6 @@
 }
 
 .contain {
-  /* display: grid; */
-  /* grid-template-columns: repeat(autofit, minmax(200px, 1fr)); */
-  margin: 2rem 0;
   margin-left: 1.5rem;
 }
 
@@ -41,7 +43,6 @@
 }
 
 .contain p {
-  /* width: 85vw; */
   font-size: 0.9rem;
   margin-top: 3px;
   color: #6f6f6f;
@@ -55,18 +56,14 @@
 }
 
 .contain p:nth-child(3) {
-  /* color: #e67e22; */
   margin-top: 0;
-  /* color: #333333; */
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.2rem 0.3rem;
-  width: 95vw;
   margin: 0 auto;
   padding-bottom: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
 }
 
 .images {
@@ -77,10 +74,93 @@
 .images img {
   width: 100px;
   height: 100px;
+  max-width: 200;
+  max-height: auto;
   transition: all 0.5s ease-in-out;
-  /* object-fit: cover; */
 }
 
 .images img:hover {
   transform: scale(1.05);
+}
+
+@media screen and (min-width: 760px) {
+  /* .article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container {
+    width: 200px;
+  }
+  .contain {
+    width: 200px;
+  } */
+}
+
+@media (min-width: 560px) {
+  /* .section {
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
+    row-gap: 1.5rem;
+  } */
+  /* .container {
+    grid-template-columns: repeat(2, 1fr);
+  } */
+  .first {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .contain p {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .images img {
+    width: 105px;
+    height: 105px;
+  }
+}
+
+@media (min-width: 800px) {
+  .images img {
+    width: 165px;
+    height: 165px;
+  }
+  .section {
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+@media (min-width: 760px) {
+  .section {
+    display: grid;
+    grid-template-columns: 45fr 55fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .first {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-self: start;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    align-self: start;
+  }
+
+  .images img {
+    width: 135px;
+    height: 135px;
+  }
 }

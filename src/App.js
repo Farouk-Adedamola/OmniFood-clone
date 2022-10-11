@@ -13,20 +13,6 @@ function App() {
         <HowItworks />
         <Meals />
         <Testimonials />
-        <p>
-          shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-          kkkddjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-          djjjjjjjjjjjjjjjjjjjjjjjjjjjjdjjjjjj
-          shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-          kkkddjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-          djjjjjjjjjjjjjjjjjjjjjjjjjjjjdjjjjjj
-          shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-          kkkddjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-          djjjjjjjjjjjjjjjjjjjjjjjjjjjjdjjjjjj
-          shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-          kkkddjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-          djjjjjjjjjjjjjjjjjjjjjjjjjjjjdjjjjjj
-        </p>
       </section>
     </>
   );

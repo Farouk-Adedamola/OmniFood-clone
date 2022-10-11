@@ -10,21 +10,23 @@ const Testimonials = () => {
         <main className={classes.main}>
           <h1>TESTIMONIALS</h1>
           <h2>Once you try it, you can't go back.</h2>
+          <div className={classes.first}>
+            {testimonials.map((test) => {
+              const { id, img, name, text } = test;
+              return (
+                <nav key={id} className={classes.contain}>
+                  <img src={img} alt="img" />
+                  <p>{text}</p>
+                  <p className={classes.icon}>
+                    <BsDash />
+                    {name}
+                  </p>
+                </nav>
+              );
+            })}
+          </div>
         </main>
         <article className={classes.article}>
-          {testimonials.map((test) => {
-            const { id, img, name, text } = test;
-            return (
-              <nav key={id} className={classes.contain}>
-                <img src={img} alt="img" />
-                <p>{text}</p>
-                <p className={classes.icon}>
-                  <BsDash />
-                  {name}
-                </p>
-              </nav>
-            );
-          })}
           <div className={classes.container}>
             {images.map((image) => {
               const { id, img } = image;
