@@ -5,6 +5,7 @@ import HowItworks from "./Components/HowItworks/HowItworks";
 import Meals from "./Components/Meals/Meals";
 import Testimonials from "./Components/Testimonials/Testimonials";
 import Pricing from "./Components/Pricing/Pricing";
+import Advantages from "./Components/Advantages/Advantages";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
         <Meals />
         <Testimonials />
         <Pricing />
+        <Advantages />
       </section>
     </>
   );
