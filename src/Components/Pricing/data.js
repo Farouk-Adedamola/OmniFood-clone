@@ -7,6 +7,8 @@ export const price = [
     tick: "1 meal per day",
     tick2: "Order from 11am to 9pm",
     tick3: "Delivery is free",
+    check: false,
+    value: false,
   },
   {
     id: 2,
@@ -17,6 +19,8 @@ export const price = [
     tick: "2 meals per day",
     tick2: "Order 24/7",
     tick3: "Delivery is free",
+    check: true,
     tick4: "Get access to latest recipes",
+    value: true,
   },
 ];
