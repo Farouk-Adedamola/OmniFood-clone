@@ -20,7 +20,7 @@ export const testimonials = [
     id: 1,
     img: dave,
     name: "Dave Bryson",
-    text: "Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.",
+    text: "Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical, very very magical",
   },
   {
     id: 2,

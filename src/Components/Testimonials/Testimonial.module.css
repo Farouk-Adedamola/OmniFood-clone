@@ -5,17 +5,10 @@
     rgba(253, 242, 233, 1) 48%,
     rgba(253, 242, 233, 1) 100%
   );
-  padding-left: 1.5rem;
-  /* display: grid;
-  grid-template-columns: 55fr 45fr;
-  align-items: center; */
-  /* grid-template-columns: repeat(autofit, minmax(200px 1fr)); */
-  /* grid-template-rows: repeat(autofix, minmax(200px 1fr)); */
 }
 
 .main {
-  padding-top: 4rem;
-  /* margin-top: 4rem; */
+  padding: 4rem 1.5rem;
 }
 
 .main h1 {
@@ -30,16 +23,6 @@
   font-size: 1.7rem;
   line-height: 1.7rem;
   margin-top: 1rem;
-}
-
-.contain {
-  /* margin-left: 1.5rem; */
-}
-
-.contain > img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
 }
 
 .contain p {
@@ -62,8 +45,8 @@
 .container {
   margin: 0 auto;
   padding-bottom: 2rem;
-  grid-template-columns: repeat(4, 1fr);
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .images {
@@ -72,10 +55,8 @@
 }
 
 .images img {
-  width: 100px;
-  height: 100px;
-  max-width: 200;
-  max-height: auto;
+  width: 110px;
+  height: 110px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -83,30 +64,35 @@
   transform: scale(1.05);
 }
 
-@media screen and (min-width: 760px) {
-  /* .article {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+@media screen and (max-width: 290px) {
+  .images img {
+    width: 70px;
+    height: 70px;
   }
 
-  .container {
-    width: 200px;
-  }
   .contain {
-    width: 200px;
-  } */
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+  }
+  .contain > img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    box-sizing: border-box;
+    /* outline-offset: -1px; */
+    /* outline: 2px solid #e67e22; */
+    border-right: 2px solid #e67e22;
+  }
 }
 
 @media (min-width: 560px) {
-  /* .section {
-    display: grid;
-    grid-template-columns: 55fr 45fr;
-    align-items: center;
-    row-gap: 1.5rem;
-  } */
-  /* .container {
-    grid-template-columns: repeat(2, 1fr);
-  } */
   .first {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -119,51 +105,33 @@
   .contain p {
     font-size: 1.1rem;
     font-weight: 600;
+    width: auto;
   }
 
   .images img {
     width: 105px;
     height: 105px;
   }
+
   .main {
     align-self: flex-start;
   }
-}
-
-@media (min-width: 800px) {
-  .images img {
-    width: 145px;
-    height: 145px;
-    border-radius: 10px;
-  }
-  .section {
-    display: grid;
-    grid-template-columns: 55fr 45fr;
-    gap: 2rem;
-    align-items: start;
-  }
-
-  .container {
-    gap: 1rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto;
-    /* align-self: start; */
-    /* padding-top: 3rem; */
-    /* align-self: center; */
+  .contain > img {
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-right: 4px solid #e67e22;
   }
 }
 
 @media (min-width: 760px) {
   .section {
     display: grid;
-    grid-template-columns: 55fr 45fr;
+    grid-template-columns: 60fr 40fr;
     gap: 2rem;
     align-items: center;
+    padding: 2rem 1rem 2rem 3rem;
   }
 
   .first {
@@ -173,14 +141,17 @@
   }
 
   .container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-self: start;
     padding-top: 3rem;
-    /* align-self: center; */
+    margin-top: 0;
+    padding: 0;
   }
 
   .main {
-    margin-top: 0;
+    align-self: center;
+    margin: auto 0;
+    padding: auto;
   }
 
   .main h1 {
@@ -192,8 +163,55 @@
     line-height: 2rem;
     padding-right: 1.5rem;
   }
-  /* .images img {
-    width: 115px;
-    height: 115px;
-  } */
+
+  .images img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    margin: 0;
+    padding: 2rem 0.8rem 2rem 4rem;
+    display: grid;
+    grid-template-columns: 60fr 40fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .main {
+    align-self: start;
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+  }
+
+  .images img {
+    width: 155px;
+    height: 155px;
+    border-radius: 10px;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    margin: 0;
+    gap: 0.5rem;
+  }
+
+  .first {
+    padding: 2rem 0 0 0;
+  }
+  .main h2 {
+    font-size: 2.7rem;
+    line-height: 2.3rem;
+  }
+  .contain p {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding: 0.3rem 0.5rem 0.3rem 0;
+  }
 }

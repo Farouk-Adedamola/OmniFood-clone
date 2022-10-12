@@ -1,0 +1,58 @@
+.wrapper {
+  padding: 3rem 1.8rem;
+}
+
+.header {
+}
+
+.header h1 {
+  color: #cf711f;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.header h2 {
+  margin-top: 10px;
+  color: #333333;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  margin: 2rem 0;
+  padding: 1rem 1.7rem;
+  border: 4px solid #fdf2e9;
+  border-radius: 1rem;
+}
+
+.head {
+  margin-top: 0 !important;
+}
+
+.head h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #cf711f;
+  font-size: 1rem;
+}
+
+.head h1 span {
+  font-size: 1.6rem;
+}
+
+.head h1 {
+  color: #333333;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 0;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}

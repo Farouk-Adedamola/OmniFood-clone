@@ -1,3 +1,9 @@
 /* .Navbar {
   transition: all 1s ease-in-out;
 } */
+
+@media screen and (max-width: 300px) {
+  .components .featured {
+    display: none;
+  }
+}

@@ -35,3 +35,9 @@
     object-fit: contain;
   }
 }
+
+@media screen and (max-width: 300px) {
+  .featured {
+    display: none;
+  }
+}
