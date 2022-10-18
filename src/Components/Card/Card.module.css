@@ -1,0 +1,90 @@
+.section {
+  /* margin: 0 2rem; */
+}
+
+.main {
+  margin: 0 auto;
+  width: 90vw;
+  border-radius: 0.7rem;
+
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.section img {
+  width: 90vw;
+  object-fit: cover;
+  height: 220px;
+  border-radius: 0.7rem 0.7rem 0 0;
+}
+
+.container {
+  margin: 0;
+  padding: 0 1.5rem;
+}
+
+.texts {
+  padding: 8px 0 1.4rem 0;
+}
+
+.texts h1 {
+  color: #45260a;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.texts p {
+  color: #45260a;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #45260a;
+  padding: 0.6rem 0 0.3rem 0;
+}
+
+input:active {
+  border-color: #fdf2e9;
+}
+
+input,
+select {
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: #fdf2e9;
+  outline: none;
+  text-transform: capitalize;
+  margin-bottom: 0.7rem;
+}
+
+.email {
+  text-transform: lowercase;
+}
+
+button {
+  padding: 0.8rem 0.8rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin: 1.5rem 0;
+  background: #45260a;
+  color: #fdf2e9;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: all 0.4s;
+}
+
+button:hover {
+  background: #fdf2e9;
+  color: #333333;
+}
