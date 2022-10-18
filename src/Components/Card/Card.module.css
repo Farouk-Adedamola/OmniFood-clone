@@ -1,14 +1,13 @@
 .section {
-  /* margin: 0 2rem; */
-}
-
-.main {
   margin: 0 auto;
   width: 90vw;
   border-radius: 0.7rem;
 
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.main {
 }
 
 .section img {
@@ -87,4 +86,33 @@ button {
 button:hover {
   background: #fdf2e9;
   color: #333333;
+}
+
+@media screen and (min-width: 660px) {
+  .section {
+    width: 80vw;
+    height: 75vh;
+  }
+  .main {
+    /* width: 55vw; */
+    display: grid;
+    grid-template: "a b" / 65fr 30fr;
+    gap: 5fr;
+    /* grid-template-areas: "a b"; */
+    /* flex-direction: row-reverse; */
+  }
+
+  .image {
+    grid-area: b;
+  }
+
+  .container {
+    grid-area: a;
+  }
+  .section img {
+    width: 30vw;
+    object-fit: cover;
+    height: 75vh;
+    border-radius: 0 0.7rem 0 0;
+  }
 }

@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react";
 import classes from "./Card.module.css";
-import image from "../../Assets/menu-images/gallery-9.jpg";
+import image from "../../Assets/menu-images/gallery-5.jpg";
 
 const Card = () => {
   const [email, setEmail] = useState("");

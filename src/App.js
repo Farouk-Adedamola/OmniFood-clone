@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <section className={classes.components}>
-        <Navbar />
+        {/* <Navbar /> */}
         <Featured className={classes.featured} />
         <HowItworks />
         <Meals />

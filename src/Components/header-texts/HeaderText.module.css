@@ -41,6 +41,7 @@
   font-weight: bold;
   font-size: 1rem;
   background: #fff;
+  color: #333333;
   border: solid 2px transparent;
   border-radius: 0.5rem;
 }
@@ -53,6 +54,7 @@ button:first-child {
 
 button:first-child:hover {
   background: #cf711f;
+  color: #fff;
 }
 
 button:nth-child(2):hover {
