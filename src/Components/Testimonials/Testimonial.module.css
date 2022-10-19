@@ -86,8 +86,6 @@
     height: auto;
     border-radius: 50%;
     box-sizing: border-box;
-    /* outline-offset: -1px; */
-    /* outline: 2px solid #e67e22; */
     border-right: 2px solid #e67e22;
   }
 }

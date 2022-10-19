@@ -116,12 +116,10 @@ select {
         rgba(230, 126, 34, 0.35)
       ),
       url(../../Assets/menu-images/gallery-5.jpg);
-    /* display: grid; */
     width: 25vw;
     background-size: contain;
     background-position: center;
-    /* object-fit: cover; */
-    /* height: auto; */
+
     border-radius: 0 0.7rem 0.7rem 0;
   }
 
