@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect, useRef } from "react";
-import logo from "../Assets/logo-images/omnifood-logo.png";
+import logo from "../../Assets/logo-images/omnifood-logo.png";
 import { links } from "./navData";
 import { FaBars } from "react-icons/fa";
 import HeaderText from "../header-texts/HeaderText";

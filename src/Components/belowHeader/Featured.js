@@ -1,9 +1,5 @@
 import React, { Fragment } from "react";
-// import techcrunch from "../../Assets/logo-images/techcrunch.png";
-// import businessinsider from "../../Assets/logo-images/business-insider.png";
-// import newyorktimes from "../../Assets/logo-images/the-new-york-times.png";
-// import forbes from "../../Assets/logo-images/forbes.png";
-// import usatoday from "../../Assets/logo-images/usa-today.png";
+
 import { image } from "./imageData";
 import classes from "./Featured.module.css";
 

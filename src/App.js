@@ -3,29 +3,24 @@ import Navbar from "./Components/Navbar/Navbar";
 import Featured from "./Components/belowHeader/Featured";
 import HowItworks from "./Components/HowItworks/HowItworks";
 import Meals from "./Components/Meals/Meals";
-
+import Testimonials from "./Components/Testimonials/Testimonials";
+import Pricing from "./Components/Pricing/Pricing";
+import Advantages from "./Components/Advantages/Advantages";
+import Card from "./Components/Card/Card";
+import Footer from "./Components/Footer/Footer";
 function App() {
   return (
     <>
-      <section className={classes.Navbar}>
-        <Navbar />;
-        <Featured />
+      <section className={classes.components}>
+        <Navbar />
+        <Featured className={classes.featured} />
         <HowItworks />
         <Meals />
-        <p>
-          shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-          kkkddjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-          djjjjjjjjjjjjjjjjjjjjjjjjjjjjdjjjjjj
-          shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-          kkkddjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-          djjjjjjjjjjjjjjjjjjjjjjjjjjjjdjjjjjj
-          shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-          kkkddjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-          djjjjjjjjjjjjjjjjjjjjjjjjjjjjdjjjjjj
-          shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-          kkkddjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-          djjjjjjjjjjjjjjjjjjjjjjjjjjjjdjjjjjj
-        </p>
+        <Testimonials />
+        <Pricing />
+        <Advantages />
+        <Card />
+        <Footer />
       </section>
     </>
   );
