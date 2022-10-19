@@ -7,11 +7,12 @@ import Testimonials from "./Components/Testimonials/Testimonials";
 import Pricing from "./Components/Pricing/Pricing";
 import Advantages from "./Components/Advantages/Advantages";
 import Card from "./Components/Card/Card";
+import Footer from "./Components/Footer/Footer";
 function App() {
   return (
     <>
       <section className={classes.components}>
-        {/* <Navbar /> */}
+        <Navbar />
         <Featured className={classes.featured} />
         <HowItworks />
         <Meals />
@@ -19,11 +20,7 @@ function App() {
         <Pricing />
         <Advantages />
         <Card />
-        <p>
-          ggggggggggggggggggggggg ggggjwwwwwwwwwwwwwwwwbq
-          qqqqqqqqqqqqqqqqqqqqqqqq qqqqqqqqqqveeeeeeeeeeeee
-          eeeeeeehhhhhhhhhhhhhhhhh hhhkwwwwwwwwwwwwwwwwjkkk kkkkkkkkkkkkkwbebbbb
-        </p>
+        <Footer />
       </section>
     </>
   );
