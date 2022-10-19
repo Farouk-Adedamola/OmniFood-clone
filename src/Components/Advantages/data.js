@@ -29,7 +29,7 @@ export const Advantage = [
     pause: false,
   },
   {
-    id: 2,
+    id: 4,
     name: "Pause anytime",
     info: "Going on vacation? Just pause your subscription, and we refund unused days.",
     infinite: false,
