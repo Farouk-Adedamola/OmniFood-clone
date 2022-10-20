@@ -46,6 +46,13 @@
   border-radius: 0.5rem;
 }
 
+@media screen and (max-width: 300px) {
+  .buttons button {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
+}
+
 button:first-child {
   background: #e67e22;
   color: #fff;
