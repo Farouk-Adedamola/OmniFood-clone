@@ -1,45 +1,41 @@
 .main {
   margin-top: 7rem;
   border-top: 1px dotted #767676;
+  padding-bottom: 2rem;
 }
 
 .area {
-  margin-top: 5rem;
   width: 90vw;
-  margin: 5rem auto 2rem auto;
+  margin: 5rem auto 0 auto;
+  padding-top: 5rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  margin-top: 0;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .section {
   margin: 0;
-  padding: 0;
 }
 
-.section p,
-.last p {
+.section p {
+  text-transform: capitalize;
+  font-variant: small-caps;
   color: #333333;
   font-weight: 700;
   font-size: 0.9rem;
+  margin-top: 0;
 }
 
 .section ul {
   list-style: none;
-  margin-left: 0;
+  margin: 0;
   padding: 0;
   line-height: 2rem;
 }
 
-.last ul {
-  list-style: none;
-  margin-left: 0;
-  padding: 0;
-}
-
-.section ul li a,
-.last ul li a {
+.section ul li a {
   text-decoration: none;
   font-size: small;
   text-transform: capitalize;
@@ -47,9 +43,19 @@
   font-weight: 600;
 }
 
-.last img {
+.section img {
   width: 120px;
   height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 300px) {
+  .section img {
+    width: 85px;
+    height: auto;
+    margin-top: 0;
+  }
 }
 
 .images {
@@ -60,38 +66,47 @@
   margin-right: 15px;
 }
 
-.last .copy {
-  font-size: 0.6rem;
+.section .copy {
+  font-size: 0.8rem;
   color: #767676;
+  align-self: end;
+  margin-bottom: 0;
+  width: 30vw;
+  padding: 1rem 0 0 0;
+}
+
+.address {
+  width: 40vw;
 }
 
 .article {
-  display: flex;
-  padding-bottom: 2.5rem;
-}
-
-.e {
-  margin-top: 0;
-  margin-left: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
 }
 
 .d {
-  align-self: center;
+  margin-top: 0;
 }
 
-.d .space {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.e ul li {
-  margin-bottom: 1rem;
+.e {
+  margin-left: 1rem;
 }
 
 @media screen and (min-width: 760px) {
-  .d {
-    align-self: start;
-    justify-self: center;
+  .area {
+    display: grid;
+    justify-content: center;
+    width: 90vw;
+    margin: 0 auto;
+    gap: 2rem;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .section .copy {
+    width: 200px;
+  }
+  .address {
+    width: 200px;
   }
 }

@@ -92,7 +92,8 @@ select {
 
 @media screen and (min-width: 660px) {
   .section {
-    width: 85vw;
+    width: 80vw;
+    margin: 0;
   }
   .main {
     display: grid;
@@ -168,7 +169,19 @@ select {
 
   .each button {
     padding: 1rem;
-    margin-top: 1.1rem;
+    margin-top: 4rem;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .section {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .each button {
+    margin-top: 2rem;
   }
 }

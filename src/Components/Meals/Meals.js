@@ -64,8 +64,10 @@ const Meals = () => {
               return (
                 <div key={id} className={classes.items}>
                   <p>
-                    <BsCheckAll className={classes.check} />
-                    {name}
+                    <span>
+                      <BsCheckAll className={classes.check} />
+                      {name}
+                    </span>
                   </p>
                 </div>
               );

@@ -57,47 +57,51 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <article className={classes.article}>
-            <div className={`${classes.last} ${classes.d}`}>
-              <img src={logo} alt="logo" />
-              <div className={classes.space}>
-                <ul className={classes.images}>
-                  <li>
-                    <a href="/">
-                      <FaInstagram />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      <FaFacebook />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      <FaTwitter />
-                    </a>
-                  </li>
-                </ul>
-                <p className={classes.copy}>
-                  Copyright © 2022 by Omnifood, Inc. All rights reserved.
-                </p>
-              </div>
-            </div>
-
-            <div className={`${classes.last} ${classes.e}`}>
-              <p>contact us</p>
-              <ul>
+          <div className={`${classes.section} ${classes.d}`}>
+            <img src={logo} alt="logo" />
+            <div className={classes.space} style={{ paddingTop: "1.5rem" }}>
+              <ul className={classes.images}>
                 <li>
                   <a href="/">
-                    623 Harrison St., 2nd Floor, San Francisco, CA 94107
+                    <FaInstagram />
                   </a>
                 </li>
                 <li>
-                  <a href="/">415-201-6370 faroukadedamola1@gmail.com</a>
+                  <a href="/">
+                    <FaFacebook />
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <FaTwitter />
+                  </a>
                 </li>
               </ul>
+              <p className={classes.copy} style={{ marginTop: "1rem" }}>
+                Copyright © 2022 by Omnifood, Inc. All rights reserved.
+              </p>
             </div>
-          </article>
+          </div>
+
+          <div className={`${classes.section} ${classes.e}`}>
+            <p>contact us</p>
+            <ul className={classes.address}>
+              <p className={classes.copy}>
+                623 Harrison St., 2nd Floor, San Francisco, CA 94107
+              </p>
+              <p
+                className={classes.copy}
+                style={{
+                  fontSize: "0.6rem",
+                  fontWeight: "normal",
+                  marginTop: "0",
+                  paddingTop: "0",
+                }}
+              >
+                faroukadedamola1@gmail.com
+              </p>
+            </ul>
+          </div>
         </section>
       </main>
     </Fragment>
