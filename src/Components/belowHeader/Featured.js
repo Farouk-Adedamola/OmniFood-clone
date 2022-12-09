@@ -16,7 +16,7 @@ const Featured = () => {
                 src={img}
                 style={css}
                 alt="img"
-                className={classes.busimg}
+                // className={classes.busimg}
               />
             );
           })}

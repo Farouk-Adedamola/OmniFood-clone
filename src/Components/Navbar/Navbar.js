@@ -10,28 +10,20 @@ const Navbar = () => {
   const linksRef = useRef(null);
   const [fix, setFix] = useState(false);
 
-  // const navFix = () => {
-  //   if (window.scrollY >= 200) {
-  //     setFix(true);
-  //   } else {
-  //     setFix(false);
-  //   }
-  // };
+  // useEffect(() => {
+  //   const navFix = () => {
+  //     if (window.scrollY >= 5050) {
+  //       setFix(true);
+  //     } else {
+  //       setFix(false);
+  //     }
+  //   };
+  //   window.addEventListener("scroll", navFix);
 
-  useEffect(() => {
-    const navFix = () => {
-      if (window.scrollY >= 5050) {
-        setFix(true);
-      } else {
-        setFix(false);
-      }
-    };
-    window.addEventListener("scroll", navFix);
-
-    return () => {
-      window.removeEventListener("scroll", navFix);
-    };
-  });
+  //   return () => {
+  //     window.removeEventListener("scroll", navFix);
+  //   };
+  // });
 
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;

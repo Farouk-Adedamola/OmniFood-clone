@@ -1,5 +1,5 @@
 .featured h1 {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 0.8rem;
   text-align: center;
   color: #767676;
@@ -7,37 +7,42 @@
 
 .featured {
   color: #767676;
-  margin-top: 0;
+  margin-top: 2rem;
 }
 
 .article {
-  height: 3rem;
+  padding: 1rem;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  width: 75vw;
-  margin: 0 auto;
   align-items: center;
 }
 
-.busimg {
-  margin: 0 auto;
+.article img {
+  filter: grayscale(100%);
+  object-fit: contain;
+  width: 18%;
+  margin: auto;
 }
 
 @media screen and (min-width: 760px) {
+  .featured {
+    padding: 0 150px 0 150px;
+  }
   .featured h1 {
     font-size: 1.3rem;
     letter-spacing: 0.3rem;
   }
 
-  .busimg {
+  .article {
+    justify-content: center;
+  }
+
+  .article img {
+    aspect-ratio: 3/2;
     filter: grayscale(100%);
     object-fit: contain;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .featured {
-    display: none;
+    margin-left: 1rem;
+    width: 15%;
   }
 }

@@ -98,14 +98,13 @@
 /* @ 760 pixels */
 
 @media screen and (min-width: 860px) {
+  .container {
+    padding: 0 30px 0 30px;
+  }
   .header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .fixed {
-    padding: 1.5rem 2.8rem;
   }
 
   .fixed img {
@@ -135,6 +134,7 @@
     font-size: 1rem;
     padding: 0.5rem 0.6rem;
     border-radius: 0.4rem;
+    transition: all 1s;
   }
 
   .article ul li a:hover {

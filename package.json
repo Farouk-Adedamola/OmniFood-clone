@@ -1,5 +1,6 @@
 {
   "name": "omni",
+  "homepage": "http://subarena.com.ng",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

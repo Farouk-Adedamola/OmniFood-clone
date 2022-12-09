@@ -8,27 +8,27 @@ export const image = [
   {
     id: 1,
     img: techcrunch,
-    css: { width: "3.5rem" },
+    // css: { width: "3.5rem" },
   },
   {
     id: 2,
     img: businessinsider,
-    css: { width: "3.5rem" },
+    // css: { width: "3.5rem" },
   },
   {
     id: 3,
     img: newyorktimes,
-    css: { width: "4.2rem" },
+    // css: { width: "4.2rem" },
   },
   {
     id: 4,
     img: forbes,
-    css: { width: "2.2rem" },
+    // css: { width: "2.2rem" },
   },
   {
     id: 5,
     img: usatoday,
-    css: { width: "3rem" },
+    // css: { width: "3rem" },
   },
 ];
 

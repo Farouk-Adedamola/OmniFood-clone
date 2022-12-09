@@ -22,11 +22,15 @@ const Howitworks = () => {
             </p>
           </div>
         </div>
-        <div className={`${classes.article} ${classes.diff}`}>
-          <div className={classes.wrap2}>
-            <div className={classes.wrap}>
-              <img src={phone2} alt="phone" />
+        <div className={classes.container}>
+          <div className={classes.wrap}>
+            <div className={classes.position}>
+              <div className={classes.wrapper}>
+                <div className={classes.first}></div>
+                <div className={classes.second}></div>
+              </div>
             </div>
+            <img src={phone2} alt="phone" />
           </div>
           <div className={classes.elements}>
             <h1>02</h1>

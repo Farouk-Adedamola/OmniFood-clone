@@ -19,8 +19,8 @@ function App() {
         <Testimonials />
         <Pricing />
         <Advantages />
-        <Card />
-        <Footer />
+        {/* <Card /> */}
+        {/* <Footer /> */}
       </section>
     </>
   );
