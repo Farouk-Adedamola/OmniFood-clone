@@ -56,8 +56,12 @@ const Card = () => {
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
-              <div className={`${classes.each} && ${classes.special}`}>
-                <label>Where did you hear about us? </label>
+              <div
+                className={`${classes.each} && ${classes.special} && ${classes.tag}`}
+              >
+                <label className={classes.label}>
+                  how did you hear about us?
+                </label>
                 <select name="find" id="">
                   <option value="">please choose any option</option>
                   <option value="">friends and family</option>
@@ -67,7 +71,7 @@ const Card = () => {
                   <option value="">others</option>
                 </select>
               </div>
-              <div className={classes.each}>
+              <div className={classes.last}>
                 <button type="submit">sign up now</button>
               </div>
             </form>
