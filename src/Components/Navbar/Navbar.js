@@ -10,25 +10,10 @@ const Navbar = () => {
   const linksRef = useRef(null);
   const [fix, setFix] = useState(false);
 
-  // useEffect(() => {
-  //   const navFix = () => {
-  //     if (window.scrollY >= 5050) {
-  //       setFix(true);
-  //     } else {
-  //       setFix(false);
-  //     }
-  //   };
-  //   window.addEventListener("scroll", navFix);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", navFix);
-  //   };
-  // });
-
   useEffect(() => {
-    const linksHeight = linksRef.current.getBoundingClientRect().height;
+    // const linksHeight = linksRef.current.getBoundingClientRect().height;
     if (toggle) {
-      linksContainerRef.current.style.height = `${linksHeight}px`;
+      linksContainerRef.current.style.height = `${100}vh`;
     } else {
       linksContainerRef.current.style.height = "0px";
     }
@@ -47,12 +32,10 @@ const Navbar = () => {
           <div className={classes.article} ref={linksContainerRef}>
             <ul ref={linksRef}>
               {links.map((menu) => {
-                const { id, url, text, css } = menu;
+                const { id, url, text } = menu;
                 return (
                   <li className={classes.menu} key={id}>
-                    <a href={url} style={css}>
-                      {text}
-                    </a>
+                    <a href={url}>{text}</a>
                   </li>
                 );
               })}
