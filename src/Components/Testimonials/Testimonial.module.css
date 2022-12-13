@@ -60,9 +60,11 @@
   transition: all 0.5s ease-in-out;
 }
 
-.images img:hover {
-  transform: scale(1.05);
-}
+/* fix the hover feature on the images in the testimonials section */
+
+/* .images img:hover {
+
+} */
 
 @media screen and (max-width: 290px) {
   .images img {
@@ -93,6 +95,7 @@
 @media (min-width: 560px) {
   .first {
     display: grid;
+    gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -129,7 +132,7 @@
     grid-template-columns: 60fr 40fr;
     gap: 2rem;
     align-items: center;
-    padding: 2rem 1rem 2rem 3rem;
+    padding: 2rem 1rem 2rem 2rem;
   }
 
   .first {
@@ -172,7 +175,7 @@
 @media (min-width: 1200px) {
   .section {
     margin: 0;
-    padding: 2rem 0.8rem 2rem 4rem;
+    padding: 2rem 3rem 2rem 3rem;
     display: grid;
     grid-template-columns: 60fr 40fr;
     gap: 2rem;

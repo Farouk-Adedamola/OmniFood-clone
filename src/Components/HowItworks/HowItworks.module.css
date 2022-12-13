@@ -1,5 +1,5 @@
 .section {
-  padding: 0 5vw 0 5vw;
+  padding: 4vh 5vw 0 5vw;
 }
 .section > h1 {
   font-size: 0.8rem;
@@ -29,7 +29,6 @@
 }
 
 .wrap {
-  border: 1px solid red;
   position: relative;
   display: flex;
   justify-content: center;
@@ -38,15 +37,11 @@
 
 .position {
   position: absolute;
-  /* left: -5.8rem; */
-  /* top: 3rem; */
-  /* left: 0; */
 }
 
 .wrap img {
   position: relative;
   display: block;
-  /* z-index: 7; */
 }
 
 .wrapper {
@@ -57,22 +52,18 @@
 
 .first {
   background: #e67b23;
-  width: 190px;
-  height: 190px;
+  width: 150px;
+  height: 150px;
   position: absolute;
   border-radius: 50%;
-  /* z-index: 4; */
   top: 1.5rem;
-  /* left: ; */
 }
 
 .second {
   background: #d6935c;
-  width: 240px;
-  height: 240px;
-  /* z-index: 3; */
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  /* position: absolute; */
 }
 
 .article img,
@@ -87,20 +78,23 @@
   margin-top: 0;
 }
 
-.article h1 {
+.article h1,
+.change h1 {
   color: #dddddd;
   font-weight: bold;
   font-size: 4rem;
   margin-bottom: 0;
 }
 
-.article h2 {
+.article h2,
+.change h2 {
   margin-top: 0;
   font-size: 1.1rem;
   color: #333333;
 }
 
-.article p {
+.article p,
+.change p {
   font-size: 0.85rem;
   line-height: 1.5rem;
   color: #767676;
@@ -108,7 +102,8 @@
 }
 
 @media screen and (min-width: 520px) {
-  .article p {
+  .article p,
+  .change p {
     font-size: 0.85rem;
     line-height: 1.2rem;
   }
@@ -145,13 +140,29 @@
     align-items: flex-start;
   }
 
-  .article img {
+  .container {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0 3rem 0 3rem;
+  }
+
+  .change {
+    padding-left: 4rem;
+  }
+
+  .article img,
+  .wrap img {
     height: 15rem;
     width: auto;
     object-fit: cover;
   }
 
-  .article p {
+  .article p,
+  .change p {
     line-height: 1.4rem;
   }
 
@@ -176,6 +187,12 @@
   .elements p {
     margin-top: 1rem;
     font-size: 0.9rem;
+  }
+
+  /* key */
+
+  .container {
+    display: flex;
   }
 }
 
@@ -209,7 +226,8 @@
     object-fit: cover;
   }
 
-  .article p {
+  .article p,
+  .change p {
     line-height: 1.5rem;
   }
 
@@ -234,5 +252,27 @@
   .elements p {
     margin-top: 1rem;
     font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .article img,
+  .wrap img {
+    height: 20rem;
+    width: auto;
+    object-fit: cover;
+  }
+
+  .first {
+    background: #e67b23;
+    width: 210px;
+    height: 210px;
+  }
+
+  .second {
+    background: #d6935c;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
   }
 }

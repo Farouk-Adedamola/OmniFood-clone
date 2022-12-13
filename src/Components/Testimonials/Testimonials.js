@@ -14,14 +14,14 @@ const Testimonials = () => {
             {testimonials.map((test) => {
               const { id, img, name, text } = test;
               return (
-                <nav key={id} className={classes.contain}>
+                <div key={id} className={classes.contain}>
                   <img src={img} alt="img" />
                   <p>{text}</p>
                   <p className={classes.icon}>
                     <BsDash />
                     {name}
                   </p>
-                </nav>
+                </div>
               );
             })}
           </div>

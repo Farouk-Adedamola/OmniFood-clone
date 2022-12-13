@@ -32,7 +32,7 @@ const Howitworks = () => {
             </div>
             <img src={phone2} alt="phone" />
           </div>
-          <div className={classes.elements}>
+          <div className={`${classes.elements} && ${classes.change}`}>
             <h1>02</h1>
             <h2>Approve your weekly meal plan</h2>
             <p>
