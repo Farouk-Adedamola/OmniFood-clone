@@ -145,6 +145,15 @@
 
   .article ul {
     display: flex;
+    flex-direction: row;
+  }
+
+  .article ul li {
+    background: transparent;
+  }
+
+  .article ul li:hover {
+    background: transparent;
   }
 
   .article ul li a {
