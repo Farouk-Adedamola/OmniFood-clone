@@ -4,6 +4,10 @@
   padding-bottom: 2rem;
 }
 
+.space {
+  padding-top: 3rem;
+}
+
 .area {
   width: 90vw;
   margin: 5rem auto 0 auto;
@@ -85,14 +89,6 @@
   justify-content: space-around;
 }
 
-.d {
-  margin-top: 0;
-}
-
-.e {
-  margin-left: 1rem;
-}
-
 @media screen and (min-width: 760px) {
   .area {
     display: grid;
@@ -108,5 +104,8 @@
   }
   .address {
     width: 200px;
+  }
+  .space {
+    padding: 0;
   }
 }

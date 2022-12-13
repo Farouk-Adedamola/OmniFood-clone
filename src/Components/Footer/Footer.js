@@ -57,7 +57,8 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className={`${classes.section} ${classes.d}`}>
+          {/* <section className={classes.space}></section> */}
+          <div className={`${classes.section} && ${classes.space}`}>
             <img src={logo} alt="logo" />
             <div className={classes.space} style={{ paddingTop: "1.5rem" }}>
               <ul className={classes.images}>
@@ -83,7 +84,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className={`${classes.section} ${classes.e}`}>
+          <div className={`${classes.section} && ${classes.space}`}>
             <p>contact us</p>
             <ul className={classes.address}>
               <p className={classes.copy}>
