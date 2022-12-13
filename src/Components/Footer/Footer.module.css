@@ -89,14 +89,13 @@
   justify-content: space-around;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 980px) {
   .area {
     display: grid;
     justify-content: center;
     width: 90vw;
     margin: 0 auto;
     gap: 2rem;
-
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   .section .copy {
