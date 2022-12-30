@@ -206,14 +206,4 @@ select {
     justify-content: space-between;
     /* width: 90vw; */
   }
-
-  /* .image {
-    background-image: linear-gradient(
-        to right bottom,
-        rgba(235, 150, 76, 0.35),
-        rgba(230, 126, 34, 0.35)
-      ),
-      url(../../Assets/menu-images/gallery-5.jpg);
-    background-position: center;
-  } */
 }

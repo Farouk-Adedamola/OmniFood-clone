@@ -25,7 +25,6 @@ export const links = [
     text: "pricing",
   },
   {
-    css: { background: "#CF711F", color: "#fff" },
     id: 6,
     url: "/profile",
     text: "try for free",

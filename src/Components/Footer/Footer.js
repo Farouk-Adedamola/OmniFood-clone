@@ -57,7 +57,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          {/* <section className={classes.space}></section> */}
           <div className={`${classes.section} && ${classes.space}`}>
             <img src={logo} alt="logo" />
             <div className={classes.space} style={{ paddingTop: "1.5rem" }}>
