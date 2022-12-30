@@ -38,7 +38,7 @@ const Card = () => {
             </div>
             <form onSubmit={submitHandler}>
               <section className={classes.lineone}>
-                <div className={`${classes.each} && ${classes.special}`}>
+                <div className={classes.each}>
                   <label>Full Name: </label>
                   <input
                     type="text"
@@ -59,9 +59,7 @@ const Card = () => {
                 </div>
               </section>
               <div className={classes.linetwo}>
-                <div
-                  className={`${classes.each} && ${classes.special} && ${classes.tag}`}
-                >
+                <div className={classes.secondeach}>
                   <label className={classes.label}>
                     how did you hear about us?
                   </label>

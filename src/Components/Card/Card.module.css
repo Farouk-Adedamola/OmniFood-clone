@@ -48,6 +48,16 @@ form {
   line-height: 2.2rem;
 }
 
+.secondeach {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+select {
+  margin-top: 0.6rem;
+}
+
 label {
   font-size: 0.7rem;
   font-weight: 700;
@@ -81,7 +91,7 @@ select {
   font-weight: 700;
   font-size: 1.2rem;
   transition: all 0.4s;
-  margin-top: 1rem;
+  margin-top: 1.3rem;
   outline-color: #000;
 }
 
@@ -90,15 +100,14 @@ select {
   color: #333333;
 }
 
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 760px) {
   .section {
     transform: translateY(5rem);
   }
 
   .main {
     display: grid;
-    width: 70vw;
-    grid-template: "a b" / 60fr 25fr;
+    grid-template: "a b" / 60fr 30fr;
     grid-gap: 3rem;
   }
 
@@ -108,7 +117,7 @@ select {
 
   .container {
     grid-area: a;
-    padding: 2rem 2rem 2rem 4rem;
+    padding: 2rem 3rem 2rem 4rem;
   }
 
   .image {
@@ -119,10 +128,30 @@ select {
       ),
       url(../../Assets/menu-images/gallery-5.jpg);
     width: 30vw;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-
     border-radius: 0 0.7rem 0.7rem 0;
+  }
+
+  .lineone,
+  .linetwo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .linetwo {
+    margin-top: 2rem;
+  }
+
+  .secondeach {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .last button {
+    margin: 0;
+    font-size: 0.8rem;
   }
 
   .section img {
@@ -140,13 +169,6 @@ select {
     padding-top: 0.8rem;
   }
 
-  form {
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    padding: 0; */
-  }
-
   .each {
     display: flex;
     flex-direction: column;
@@ -154,32 +176,19 @@ select {
     margin: 0;
   }
 
-  .special {
-    margin-right: 2rem;
+  input,
+  .last button {
+    padding: 1rem;
+    width: 15vw;
   }
 
-  .each input,
   select {
-    padding: 1rem;
+    width: 18.5vw;
   }
 
   .each label {
     font-size: 1rem;
     font-weight: 500;
-  }
-
-  .linetwo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* width: ; */
-  }
-
-  .last button {
-    /* width: 20vw; */
-    /* padding: 1rem; */
-    /* margin-top: 2.5rem; */
-    /* margin-bottom: 0; */
   }
 }
 
@@ -187,19 +196,15 @@ select {
   .section {
     margin: 0 auto;
   }
-
-  .tag {
-    padding-top: 2rem;
-  }
 }
 
 @media screen and (min-width: 1200px) {
-  .last button {
-    /* margin-top: 2rem; */
-  }
-
   .section {
     width: 80vw;
+  }
+
+  .container {
+    width: 50vw;
   }
 
   .main {
