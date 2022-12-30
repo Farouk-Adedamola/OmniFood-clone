@@ -37,42 +37,46 @@ const Card = () => {
               </p>
             </div>
             <form onSubmit={submitHandler}>
-              <div className={`${classes.each} && ${classes.special}`}>
-                <label>Full Name: </label>
-                <input
-                  type="text"
-                  value={name}
-                  placeholder="farouk adedamola"
-                  onChange={(e) => setName(e.target.value)}
-                />
-              </div>
-              <div className={classes.each}>
-                <label>Email Address: </label>
-                <input
-                  className={classes.email}
-                  type="email"
-                  value={email}
-                  placeholder="me@example.com"
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </div>
-              <div
-                className={`${classes.each} && ${classes.special} && ${classes.tag}`}
-              >
-                <label className={classes.label}>
-                  how did you hear about us?
-                </label>
-                <select name="find" id="">
-                  <option value="">please choose any option</option>
-                  <option value="">friends and family</option>
-                  <option value="">youtube video</option>
-                  <option value="">podcasts</option>
-                  <option value="">facebook ad</option>
-                  <option value="">others</option>
-                </select>
-              </div>
-              <div className={classes.last}>
-                <button type="submit">sign up now</button>
+              <section className={classes.lineone}>
+                <div className={`${classes.each} && ${classes.special}`}>
+                  <label>Full Name: </label>
+                  <input
+                    type="text"
+                    value={name}
+                    placeholder="farouk adedamola"
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                </div>
+                <div className={classes.each}>
+                  <label>Email Address: </label>
+                  <input
+                    className={classes.email}
+                    type="email"
+                    value={email}
+                    placeholder="me@example.com"
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
+              </section>
+              <div className={classes.linetwo}>
+                <div
+                  className={`${classes.each} && ${classes.special} && ${classes.tag}`}
+                >
+                  <label className={classes.label}>
+                    how did you hear about us?
+                  </label>
+                  <select name="find" id="">
+                    <option value="">please choose any option</option>
+                    <option value="">friends and family</option>
+                    <option value="">youtube video</option>
+                    <option value="">podcasts</option>
+                    <option value="">facebook ad</option>
+                    <option value="">others</option>
+                  </select>
+                </div>
+                <div className={classes.last}>
+                  <button type="submit">sign up now</button>
+                </div>
               </div>
             </form>
           </div>

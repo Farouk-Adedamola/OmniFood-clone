@@ -26,7 +26,7 @@ const Navbar = () => {
           <div className={fix ? classes.scroll : classes.fixed}>
             <img src={logo} alt="logo" />
             <button type="button" onClick={() => setToggle(!toggle)}>
-              <FaBars />
+              <FaBars style={{ fontSize: "1.5rem" }} />
             </button>
           </div>
           <div className={classes.article} ref={linksContainerRef}>

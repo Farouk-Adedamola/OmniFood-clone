@@ -18,11 +18,11 @@ const Home = () => {
         <Featured className={classes.featured} />
         <HowItworks />
         <Meals />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Pricing />
         <Advantages />
         <Card />
-        <Footer />
+        {/* <Footer /> */}
       </section>
     </Fragment>
   );

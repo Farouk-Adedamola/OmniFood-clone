@@ -58,12 +58,6 @@ input:active {
   border-color: #fdf2e9;
 }
 
-.label {
-  /* font-size: 1rem; */
-  /* margin-top: 0.5rem; */
-  /* line-height: 0.8rem; */
-}
-
 input,
 select {
   padding: 0.7rem;
@@ -98,8 +92,7 @@ select {
 
 @media screen and (min-width: 660px) {
   .section {
-    width: 80vw;
-    /* padding: 1rem 3rem 0 2rem; */
+    transform: translateY(5rem);
   }
 
   .main {
@@ -119,13 +112,13 @@ select {
   }
 
   .image {
-    /* background-image: linear-gradient(
+    background-image: linear-gradient(
         to right bottom,
         rgba(235, 150, 76, 0.35),
         rgba(230, 126, 34, 0.35)
       ),
-      url(../../Assets/menu-images/gallery-5.jpg); */
-    /* width: 25vw; */
+      url(../../Assets/menu-images/gallery-5.jpg);
+    width: 30vw;
     background-size: contain;
     background-position: center;
 
@@ -148,10 +141,10 @@ select {
   }
 
   form {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    padding: 0;
+    padding: 0; */
   }
 
   .each {
@@ -175,10 +168,18 @@ select {
     font-weight: 500;
   }
 
+  .linetwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: ; */
+  }
+
   .last button {
-    padding: 1rem;
-    margin-top: 4.5rem;
-    margin-bottom: 0;
+    /* width: 20vw; */
+    /* padding: 1rem; */
+    /* margin-top: 2.5rem; */
+    /* margin-bottom: 0; */
   }
 }
 
@@ -194,7 +195,7 @@ select {
 
 @media screen and (min-width: 1200px) {
   .last button {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
   }
 
   .section {
@@ -204,6 +205,9 @@ select {
   .main {
     display: flex;
     justify-content: space-between;
-    /* width: 90vw; */
+  }
+
+  .image {
+    border-radius: 0.7rem 0 0 0.7rem;
   }
 }

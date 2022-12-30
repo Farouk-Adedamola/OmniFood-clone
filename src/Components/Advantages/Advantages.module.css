@@ -40,17 +40,14 @@
     gap: 1rem;
     justify-content: center;
     align-items: start;
-    padding: 3rem;
+    padding: 0 2.5rem;
   }
   .container {
     margin-right: 2rem;
   }
-  .container h1 {
-    font-size: 1.5rem;
-  }
 
-  .container p {
-    font-size: 1rem;
+  .info p {
+    font-size: 0.68rem;
   }
 }
 
@@ -62,5 +59,9 @@
     justify-content: center;
     align-items: start;
     padding: 2rem 7rem;
+  }
+
+  .container p {
+    font-size: 1.1rem;
   }
 }
