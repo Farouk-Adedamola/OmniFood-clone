@@ -6,27 +6,27 @@ export const links = [
   },
   {
     id: 2,
-    url: "/about",
+    url: "howitworks",
     text: "how it works",
   },
   {
     id: 3,
-    url: "/projects",
+    url: "meals",
     text: "meals",
   },
   {
     id: 4,
-    url: "/contact",
+    url: "testimonial",
     text: "testimonial",
   },
   {
     id: 5,
-    url: "/profile",
+    url: "pricing",
     text: "pricing",
   },
   {
     id: 6,
-    url: "/profile",
+    url: "tryforfree",
     text: "try for free",
   },
 ];

@@ -1,28 +1,32 @@
-import classes from "./App.module.css";
-import Navbar from "./Components/Navbar/Navbar";
-import Featured from "./Components/belowHeader/Featured";
-import HowItworks from "./Components/HowItworks/HowItworks";
-import Meals from "./Components/Meals/Meals";
-import Testimonials from "./Components/Testimonials/Testimonials";
-import Pricing from "./Components/Pricing/Pricing";
-import Advantages from "./Components/Advantages/Advantages";
-import Card from "./Components/Card/Card";
-import Footer from "./Components/Footer/Footer";
+import React, { Fragment } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SharedLayout from "./Pages/SharedLayout";
+
+// import classes from "./App.module.css";
+//  pages
+import Howitworks from "./Pages/HowItworks";
+import Home from "./Pages/Home";
+import Meals from "./Pages/Meals";
+import Testimonial from "./Pages/Testimonial";
+import Pricing from "./Pages/Pricing";
+import TryForFree from "./Pages/TryForFree";
+
 function App() {
   return (
-    <>
-      <section className={classes.components}>
-        <Navbar />
-        <Featured className={classes.featured} />
-        <HowItworks />
-        <Meals />
-        <Testimonials />
-        <Pricing />
-        <Advantages />
-        <Card />
-        <Footer />
-      </section>
-    </>
+    <Fragment>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<SharedLayout />}>
+            <Route index element={<Home />} />
+            <Route path="howitworks" element={<Howitworks />} />
+            <Route path="meals" element={<Meals />} />
+            <Route path="testimonial" element={<Testimonial />} />
+            <Route path="pricing" element={<Pricing />} />
+            <Route path="tryforfree" element={<TryForFree />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </Fragment>
   );
 }
 

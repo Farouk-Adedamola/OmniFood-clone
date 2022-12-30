@@ -1,8 +1,8 @@
 import React, { Fragment, useState, useEffect, useRef } from "react";
 import logo from "../../Assets/logo-images/omnifood-logo.png";
 import { links } from "./navData";
+import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
-import HeaderText from "../header-texts/HeaderText";
 import classes from "./Navbar.module.css";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -35,14 +35,15 @@ const Navbar = () => {
                 const { id, url, text } = menu;
                 return (
                   <li className={classes.menu} key={id}>
-                    <a href={url}>{text}</a>
+                    <NavLink to={url} className={classes.NavLink}>
+                      {text}
+                    </NavLink>
                   </li>
                 );
               })}
             </ul>
           </div>
         </div>
-        <HeaderText />
       </section>
     </Fragment>
   );
