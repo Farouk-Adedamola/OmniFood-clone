@@ -57,6 +57,17 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
+          <div
+            className={`${classes.section} && ${classes.space} && ${classes.last}`}
+          >
+            <p>contact us</p>
+            <ul className={classes.address}>
+              <p className={classes.copy}>
+                623 Harrison St., 2nd Floor, San Francisco, CA 94107
+              </p>
+            </ul>
+          </div>
           <div className={`${classes.section} && ${classes.space}`}>
             <img src={logo} alt="logo" />
             <div className={classes.space} style={{ paddingTop: "1.5rem" }}>
@@ -81,26 +92,6 @@ const Footer = () => {
                 Copyright © 2022 by Omnifood, Inc. All rights reserved.
               </p>
             </div>
-          </div>
-
-          <div className={`${classes.section} && ${classes.space}`}>
-            <p>contact us</p>
-            <ul className={classes.address}>
-              <p className={classes.copy}>
-                623 Harrison St., 2nd Floor, San Francisco, CA 94107
-              </p>
-              <p
-                className={classes.copy}
-                style={{
-                  fontSize: "0.6rem",
-                  fontWeight: "normal",
-                  marginTop: "0",
-                  paddingTop: "0",
-                }}
-              >
-                faroukadedamola1@gmail.com
-              </p>
-            </ul>
           </div>
         </section>
       </main>

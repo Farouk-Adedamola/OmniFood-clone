@@ -22,7 +22,7 @@ const Home = () => {
         <Pricing />
         <Advantages />
         <Card />
-        {/* <Footer /> */}
+        <Footer />
       </section>
     </Fragment>
   );
