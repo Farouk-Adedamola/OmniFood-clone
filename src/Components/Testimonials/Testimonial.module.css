@@ -12,7 +12,7 @@
 }
 
 .main h1 {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #e67e22;
   margin-bottom: 0;
 }
@@ -54,18 +54,6 @@
   margin: 0 auto;
 }
 
-.images img {
-  width: 110px;
-  height: 110px;
-  transition: all 0.5s ease-in-out;
-}
-
-/* fix the hover feature on the images in the testimonials section */
-
-/* .images img:hover {
-
-} */
-
 @media screen and (max-width: 290px) {
   .images img {
     width: 70px;
@@ -92,7 +80,7 @@
   }
 }
 
-@media (min-width: 560px) {
+@media screen and (max-width: 1050px) {
   .first {
     display: grid;
     gap: 2rem;
@@ -100,18 +88,26 @@
   }
 
   .container {
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2rem;
   }
 
-  .contain p {
-    font-size: 1.1rem;
-    font-weight: 600;
-    width: auto;
+  .images {
+    flex: 1 1 200px;
   }
 
   .images img {
-    width: 105px;
-    height: 105px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .contain p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    width: auto;
+    line-height: 1rem;
   }
 
   .main {
@@ -126,7 +122,7 @@
   }
 }
 
-@media (min-width: 760px) {
+@media (min-width: 1060px) {
   .section {
     display: grid;
     grid-template-columns: 60fr 40fr;
@@ -156,11 +152,11 @@
   }
 
   .main h1 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .main h2 {
-    font-size: 2.3rem;
+    font-size: 1.7rem;
     line-height: 2rem;
     padding-right: 1.5rem;
   }

@@ -4,6 +4,7 @@ import { links } from "./navData";
 import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import classes from "./Navbar.module.css";
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const linksContainerRef = useRef(null);
@@ -35,7 +36,16 @@ const Navbar = () => {
                 const { id, url, text } = menu;
                 return (
                   <li className={classes.menu} key={id}>
-                    <NavLink to={url} className={classes.NavLink}>
+                    <NavLink
+                      to={url}
+                      className={classes.NavLink}
+                      style={({ isActive }) => {
+                        return {
+                          background: isActive ? "#e67e22" : "transparent",
+                          color: isActive ? "#fff" : "#e67e22",
+                        };
+                      }}
+                    >
                       {text}
                     </NavLink>
                   </li>
