@@ -58,7 +58,7 @@
     gap: 1rem;
     justify-content: center;
     align-items: start;
-    padding: 2rem 7rem;
+    /* padding: 2rem 7rem; */
   }
 
   .container p {

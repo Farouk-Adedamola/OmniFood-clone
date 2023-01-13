@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import classes from "./Home.module.css";
-import HeaderText from "../Components/header-texts/HeaderText";
 import Featured from "../Components/belowHeader/Featured";
 import HowItworks from "../Components/HowItworks/HowItworks";
 import Meals from "../Components/Meals/Meals";
@@ -14,16 +13,19 @@ const Home = () => {
   return (
     <Fragment>
       <section className={classes.components}>
-        <HeaderText />
         <Featured className={classes.featured} />
-        <HowItworks />
-        <Meals />
-        <Testimonials />
-        <Pricing />
-        <Advantages />
-        <Card />
-        <Footer />
       </section>
+      <HowItworks />
+      <section className={classes.components}>
+        <Meals />
+      </section>
+      <Testimonials />
+      <Pricing />
+      <Advantages />
+      <section className={classes.card}>
+        <Card />
+      </section>
+      <Footer />
     </Fragment>
   );
 };

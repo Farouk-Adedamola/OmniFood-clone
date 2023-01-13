@@ -144,3 +144,9 @@
   font-size: 0.8rem;
   font-family: "Courier New", Courier, monospace;
 }
+
+@media screen and (min-width: 760) {
+  .wrapper {
+    padding: 0;
+  }
+}

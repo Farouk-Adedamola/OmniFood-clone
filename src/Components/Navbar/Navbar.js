@@ -4,6 +4,7 @@ import { links } from "./navData";
 import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import classes from "./Navbar.module.css";
+import HeaderText from "../header-texts/HeaderText";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -54,6 +55,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
+        <HeaderText />
       </section>
     </Fragment>
   );

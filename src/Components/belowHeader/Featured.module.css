@@ -27,7 +27,7 @@
 
 @media screen and (min-width: 760px) {
   .featured {
-    padding: 0 150px 0 150px;
+    /* padding: 0 150px 0 150px; */
   }
   .featured h1 {
     font-size: 1.3rem;
