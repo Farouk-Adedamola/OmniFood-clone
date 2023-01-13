@@ -41,7 +41,7 @@
 
 .section ul li a {
   text-decoration: none;
-  font-size: 0.6rem;
+  font-size: 1rem;
   text-transform: capitalize;
   color: #767676;
   font-weight: 400;
@@ -55,7 +55,7 @@
 }
 
 .section .copy {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 300px) {
@@ -75,11 +75,12 @@
 }
 
 .section .copy {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #767676;
   align-self: end;
   margin-bottom: 0;
   width: 150px;
+  font-weight: 400;
   padding: 1rem 0 0 0;
 }
 
@@ -131,7 +132,7 @@
   .area {
     display: grid;
     justify-content: center;
-    width: 90vw;
+    width: auto;
     margin: 0 auto;
     gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -148,5 +149,11 @@
 
   .last {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    padding: 100px 120px;
   }
 }
