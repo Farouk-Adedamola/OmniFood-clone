@@ -14,14 +14,16 @@ const Home = () => {
     <Fragment>
       <section className={classes.components}>
         <Featured className={classes.featured} />
+        <HowItworks />
       </section>
-      <HowItworks />
       <section className={classes.components}>
         <Meals />
       </section>
       <Testimonials />
-      <Pricing />
-      <Advantages />
+      <section className={classes.advantages}>
+        <Pricing />
+        <Advantages />
+      </section>
       <section className={classes.card}>
         <Card />
       </section>

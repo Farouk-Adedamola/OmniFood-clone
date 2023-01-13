@@ -26,9 +26,6 @@
 }
 
 @media screen and (min-width: 760px) {
-  .featured {
-    /* padding: 0 150px 0 150px; */
-  }
   .featured h1 {
     font-size: 1.3rem;
     letter-spacing: 0.3rem;
@@ -43,6 +40,6 @@
     filter: grayscale(100%);
     object-fit: contain;
     margin-left: 1rem;
-    width: 15%;
+    width: 10%;
   }
 }

@@ -5,14 +5,21 @@
 }
 
 @media screen and (min-width: 1000px) {
-  .components {
+  .components,
+  .advantages {
     padding: 0 70px;
+    margin: 0 auto;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .components {
+  .components,
+  .advantages {
     padding: 0 100px;
+    margin: 0 auto;
   }
 }
 
